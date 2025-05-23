@@ -1,3 +1,8 @@
+:root {
+    --main-bg-color: #f0f0f0;
+    --main-text-color: #333;
+    --main-font: Arial, sans-serif;
+}
 nav{
     background-color: darkblue;
     padding: 10px;
