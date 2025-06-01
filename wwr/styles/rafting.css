@@ -10,6 +10,10 @@ header {
     background-color: var(--color-primary);
     color: var(--accent2-color);
     padding: 5px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+
 }
 * {
     margin: 0;
@@ -35,8 +39,17 @@ nav, p, section, article {
     padding: 8px;
     
 }
+.socialmedia {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
 .socialmedia a {
+    color: var(--accent1-color);
     text-decoration: none;
+    padding: 2px;
+    font-size: 1.2rem;
 }
 .hero {
     position: relative;
@@ -46,7 +59,7 @@ nav, p, section, article {
     display: block;
     width: 100%;
     height: auto;
-
+    opacity: 0.8;;
 }
 h1 {
     position: absolute;
@@ -70,5 +83,92 @@ h1 {
       left: 20px;
       padding: 16px;
       background-color: #eeac60
+}
+
+.logo  {
+    display: flex;
+    justify-content: end;    
+}
+.navigation {
+	display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.navigation a {
+	display: block;
+	color: rgb(47, 47, 194);
+	padding: 15px;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+.navigation a:hover {
+	color: tomato;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.story {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    flex-direction: row;
 
 }
+.story-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 16px
+}
+.story p {
+    text-align: justify;
+}
+.story img {
+    align-self: center;
+    width: 200px;
+    height: 150px;
+}
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-content: end;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+    
+.gallery {
+    text-align: center;
+}
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+.gallery-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    max-width: 100%;
+}
+.gallery-images img:hover {
+    transform: scale(1.05);
+}
+
+
+
