@@ -57,7 +57,7 @@ nav, p, section, article {
     justify-content: center;
     align-items: center;
 }
-.contact-info article {
+.map {
     display: flex;
     justify-content: center;
     align-items: center;
