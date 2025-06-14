@@ -111,8 +111,7 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
-.cta a {
-}
+
 .trip-descriptions {
     display: flex;
     justify-content: center;
@@ -185,4 +184,12 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 20px auto;
+}
+.wireframe-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: var(--accent1-color);
 }
