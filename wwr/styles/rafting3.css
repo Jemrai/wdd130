@@ -1,0 +1,139 @@
+:root {
+    --color-primary: #dac384;
+    --color-secondary: #117eb1;
+    --accent1-color: #071310;
+    --accent2-color: #070606;
+    --heading-font: "Playfair Display",sans-serif;
+    --body-font: "inter", sans-serif;
+}
+header {
+    background-color: var(--color-primary);
+    color: var(--accent2-color);
+    padding: 5px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+
+}
+
+* {
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+}
+header, main, footer {
+    width: auto;
+    margin: 0 auto; 
+}
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--color-primary);
+    
+}
+nav, p, section {
+    margin: 16px;
+    padding: 8px;
+    
+}
+.socialmedia {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+.socialmedia a {
+    color: var(--accent1-color);
+    text-decoration: none;
+    padding: 2px;
+    font-size: 1.2rem;
+
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo  {
+    display: flex;
+    justify-content: end;    
+}
+.navigation {
+	display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.navigation a {
+	display: block;
+	color: rgb(47, 47, 194);
+	padding: 15px;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+.navigation a:hover {
+	color: tomato;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--color-primary);
+}
+
+.cta {
+    display: flex;
+    justify-content: center; 
+    align-items: start;
+    flex-direction: column;
+    background-color: #5a8d91;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    color: #080404;
+    text-align: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.trip-descriptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1.1rem));
+    gap: 15px;
+    grid-template-columns: 20% 20% 20% 20% 20% 20%;
+    grid-gap: 16px;
+    padding: 10px;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+.grid-layout img {
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: #f7f4f4;
+    display: grid;
+}
+
