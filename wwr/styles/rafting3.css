@@ -111,29 +111,78 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
+.cta a {
+}
 .trip-descriptions {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
 
 }
-.grid-layout {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1.1rem));
-    gap: 15px;
-    grid-template-columns: 20% 20% 20% 20% 20% 20%;
-    grid-gap: 16px;
-    padding: 10px;
-    margin: 0 auto;
-    width: 90%;
+.trip {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #99d5f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 20px auto;
+    color: var(--accent1-color);
+    transition: transform 0.3s ease;
+}
+.trip h3{
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+    margin: 10px 0;
     text-align: center;
 }
-.grid-layout img {
+.trip img {
     padding: 1rem;
     border: 1px solid rgb(0 0 0 / 0.1);
     border-radius: 0.5rem;
     background-color: #f7f4f4;
     display: grid;
 }
-
+.trip p {
+    font-size: 1.2rem;
+    color: var(--accent1-color);
+    margin: 10px 0;
+    text-align: center;
+}
+.trip-table h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+    margin: 10px 0;
+}
+.trip-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    text-align: center;
+    color: var(--accent1-color);
+    transition: transform 0.3s ease;
+    overflow-x: auto;
+    border: 1px solid var(--color-secondary);
+    box-sizing: border-box;
+    background-color: #f7f4f4;
+    color: var(--accent1-color);
+    font-size: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+}
